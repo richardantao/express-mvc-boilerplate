@@ -16,6 +16,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "./views/build")));
 
 /* --- Routes --- */
+app.use("/api/contact", require("./routes/contact"));
 app.use("/api/errors", require("./routes/errors"));
 app.use("/api/posts", require("./routes/posts"));
 
